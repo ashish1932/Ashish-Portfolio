@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mr. Ashish - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="home">
+        <div class="container">
+            <h1>Mr. Ashish's Portfolio</h1>
+            <p>Full-Stack Developer | Designer | Innovator</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="/1000015662.jpg" alt="About Mr.Ashish">
+            <p>Hello! I am Mr. Ashish, a passionate full-stack developer with a love for crafting digital experiences that are both functional and visually compelling. I specialize in web development, UI/UX design, and digital innovation. Let's build something amazing together!</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="filter-menu">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <img src="/website-development-banner_33099-1687.avif" alt="Project 1">
+                    <h3>Project One - Web Development</h3>
+                    
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="/gradient-ui-ux-background_23-2149052117.avif" alt="Project 2">
+                    <h3>Project Two - UI/UX Design</h3>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <img src="/mobile-application-development-guidelines-riseuplabs.webp" alt="Project 3">
+                    <h3>Project Three - App Development</h3>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="/1686939857527_e5a285e9-1a8a-431a-b97c-1ba6f2780518.webp" alt="Project 4">
+                    <h3>Project Four - Web Development</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Let's connect! Whether you're looking for collaboration or just want to chat, feel free to reach out.</p>
+            <form id="contact-form" onsubmit="submitForm(event)">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+            <div id="form-messages"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Mr. Ashish. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
